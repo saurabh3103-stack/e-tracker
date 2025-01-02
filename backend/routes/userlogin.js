@@ -1,5 +1,5 @@
 const express = require('express');
-const apiKeyAuth = require('../middleware/apiKeyAuth'); // Assuming you have API key authentication middleware
+const apiKeyAuth = require('../middleware/apiKeyAuth'); 
 const router = express.Router();
 
 function generateOTP() {
