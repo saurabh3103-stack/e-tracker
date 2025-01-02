@@ -1,0 +1,104 @@
+
+.route-container {
+    position: relative;
+    width: 95%;
+    height: 80px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  .line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #555; /* Dark grey for the road */
+    z-index: 1;
+    border-radius: 10px; /* Rounded road edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow for road depth */
+  }
+  
+  .dashed-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    z-index: 2;
+    border-top: 2px dashed #fff; /* Dashed centerline */
+    transform: translateY(-50%);
+  }
+  
+  .stop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3; /* Ensure stops are on top of the road */
+  }
+  
+  .stop-marker {
+    width: 20px;
+    height: 20px;
+    background-color: #ff5722;
+    border-radius: 50%;
+    border: 2px solid #333;
+  }
+  
+  .stop-name {
+    margin-top: -1px;
+    font-size: 14px;
+    color: #fff;
+    padding: 7px;
+  }
+  
+  /* Start and End Point Styling */
+  .start-point .stop-marker {
+    background-color: #4caf50; /* Green for start */
+  }
+  
+  .end-point .stop-marker {
+    background-color: #f44336; /* Red for end */
+  }
+  
+  .start-point .stop-name,
+  .end-point .stop-name {
+    font-weight: bold;
+  }
+  
+  /* Modal header background with green */
+.modal-header.bg-success {
+    background-color: #28a745; /* Green */
+    color: white;
+  }
+  
+  /* Red button for closing */
+  .btn-danger {
+    background-color: #dc3545; /* Red */
+    border-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  /* Blue button for submitting */
+  .btn-primary {
+    background-color: #007bff; /* Blue */
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Form select with green border when focused */
+  .form-select:focus {
+    border-color: #28a745; /* Green border */
+    box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+  }
+  

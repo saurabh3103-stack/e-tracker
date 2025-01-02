@@ -1,0 +1,21 @@
+/* src/components/Loader.css */
+.loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensures the loader stays on top of other elements */
+  }
+  
+  .loader-image {
+    width: 100%; /* Adjust the size as needed */
+    height: 100%;
+  }
+  
+  .sidebar-menu li.dropdown.open > a:hover, .sidebar-menu li.dropdown.dropdown-open > a:hover {
+    color: #fff;
+}
+.cPHygs {
+  padding: 0px !important;
+  width: -webkit-fill-available !important;
+}

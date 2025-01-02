@@ -1,0 +1,14 @@
+.custom-table .rdt_TableHead {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary-light);
+  }
+  .cPHygs{
+    padding:4px 0px 4px 0px !important;
+  }
+  .cPHygs .w-100 {
+    width: 103% !important;
+}
+.bEOvvC{
+  border:1px solid #c1c1c1 !important
+}
